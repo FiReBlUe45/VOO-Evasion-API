@@ -40,6 +40,7 @@ Le protocole RFB a besoin de vérifier la connexion avant de pouvoir lui envoyer
 Avant d'automatiser tout cela, essayons d'abord de tester notre approche manuellement.
 Pour cela rien de plus simple, je prends les messages précédents capturés et je le rejoue...
 
+![Alt Text](https://media.giphy.com/media/nXxOjZrbnbRxS/giphy.gif)
 Amazing je vois le volume descendre de la box évasion. 
 
 Bon on a réussi à réduire le son, mais je me voyais mal capturer toutes les possibilités et les rejouer quand j'en avais besoin. Je voulais rendre cela un peu plus intelligent et l'automatiser.
