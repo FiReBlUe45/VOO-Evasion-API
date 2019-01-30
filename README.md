@@ -2,8 +2,8 @@
 
 # Avertissement
 Avant de commencer, notez quelques points:
-•	Toutes les informations fournies ici sont fournies «telles quelles» et «telles que disponibles» et vous acceptez d'utiliser ces informations entièrement à vos risques et périls. En aucun cas, je ne serai tenu pour responsable de quelque manière que ce soit des dommages, pertes, dépenses, coûts ou responsabilités de quelque nature que ce soit résultant de votre utilisation des informations et documents présentés ici.
-•	Je ne suis pas un ingénieur, mais j’ai quelques connaissances qui me permettent pour comprendre le fonctionnement. Toutefois, si vous connaissez une meilleure alternative, merci de me le faire savoir. Je serai plus qu'heureux d'apprendre de nouvelles choses!
+> Toutes les informations fournies ici sont fournies «telles quelles» et «telles que disponibles» et vous acceptez d'utiliser ces informations entièrement à vos risques et périls. En aucun cas, je ne serai tenu pour responsable de quelque manière que ce soit des dommages, pertes, dépenses, coûts ou responsabilités de quelque nature que ce soit résultant de votre utilisation des informations et documents présentés ici.
+> Je ne suis pas un ingénieur, mais j’ai quelques connaissances qui me permettent pour comprendre le fonctionnement. Toutefois, si vous connaissez une meilleure alternative, merci de me le faire savoir. Je serai plus qu'heureux d'apprendre de nouvelles choses!
 Après ces petites mondanités plus que nécessaires pour ne pas être tenues comme responsables de vos agissements, passons aux choses sérieuses.
 
 
@@ -31,7 +31,7 @@ Voici un exemple de message capturé : 
 <-- Sent : 04 01 00 00 00 00 e0 03 04 00 00 00 00 00 e0 03
 ```
 
-Si l'on cherche un peu sur le net, nous trouvons que cela fait référence au protocole RFB et il fonctionne avec des sockets. Un peu violent comme solution mais c'est fonctionnelle.
+Si l'on cherche un peu sur le net, nous trouvons que cela fait référence au protocole [RFB](https://vncdotool.readthedocs.io/en/0.8.0/rfbproto.html) et il fonctionne avec des sockets. Un peu violent comme solution mais c'est fonctionnelle.
 
 Le protocole RFB a besoin de vérifier la connexion avant de pouvoir lui envoyer un message. Cette vérification est représentée par les 3 premiers échanges et la box évasion renvoi une suite de 00 pour signifier qu’elle attend une commande qui est notre dernier « sent ». Pour l’envoi de la commande, nous remarquons que nous avons deux fois la même séquence, mais avec un bit de différence qui signifie appuyer sur une touche puis relâcher cette touche. 
 
@@ -129,4 +129,4 @@ J’espère que j’ai été un maximum compréhensible, je ne suis pas pédagog
 Si vous avez des questions sur l’implémentation, n’hésitez pas !
 
 PS Le forum VOO a découpé mon post en plusieurs morceaux donc si vous remarquez qu’il manque un morceau d’explication dites-le-moi.
-
+Lien vers le forum https://forum.voo.be/ma-box-evasion-10/api-de-la-box-evasion-7227 
