@@ -22,14 +22,14 @@ La télécommande à première vue fonctionne avec des signaux Rf et non via des
 Donc là solution restante est l'application mobile. Bien évidemment, si vous avez besoin de comprendre le fonctionnement de communication entre deux appareils, il faut trouver le protocole qu'ils utilisent pour communiquer. Pour cela rien de mieux qu'analyser le réseau avec wireshark ou packet ne capture sur mobile. Dans mon cas j'ai utilisé les deux ce qui m'a permis de trouver d'autres fonctionnalités si vous voulez que j'en parle demandées  . Pour plus de facilité, je vous expose la solution la plus rapide qui est via l'application packet capture.
 Voici un exemple de message capturé : 
 ```
---> Received : 52 46 42 20 30 30 33 2e 30 30 38 0a
-<-- Sent : 52 46 42 20 30 30 33 2e 30 30 38 0a
+--> Received : 52 46 42 20 30 30 33 2e   30 30 38 0a
+<-- Sent : 52 46 42 20 30 30 33 2e 30   30 38 0a
 --> Received : 01 01
 <-- Sent : 01
 --> Received : 00 00 00 00
 <-- Sent : 01
---> Received : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-<-- Sent : 04 01 00 00 00 00 e0 03 04 00 00 00 00 00 e0 03
+--> Received : 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00
+<-- Sent : 04 01 00 00 00 00 e0 03   04 00 00 00 00 00 e0 03
 ```
 
 Si l'on cherche un peu sur le net, nous trouvons que cela fait référence au protocole [RFB](https://vncdotool.readthedocs.io/en/0.8.0/rfbproto.html) et il fonctionne avec des sockets. Un peu violent comme solution mais c'est fonctionnelle.
