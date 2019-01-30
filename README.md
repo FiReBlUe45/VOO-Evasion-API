@@ -90,7 +90,7 @@ Le premier est une interface avec toutes les valeurs des boutons possibles.
 ```
 
 Le second est le code qui s'exécute quand on appuie sur l'un ou l'autre bouton de la télécommande dans l'application.
-```
+```java
         public void onClick(View view) {
             if (RemoteFragment.this.mDevice != null && Buttons.getButtonByName(view.getTag().toString()) != null) {
                 RemoteFragment.this.mKey = Buttons.getButtonByName(view.getTag().toString()).getKey();
@@ -112,7 +112,7 @@ Le second est le code qui s'exécute quand on appuie sur l'un ou l'autre bouton 
 ```
 
 Passons la connexion, ce qui nous intéresse c’est l’envoi de commande. Dans ces fonctions "i" représente le code de la touche repris dans l'interface ci-dessus.
-```
+```java
     public void sendKey(int i) throws IOException {
         sendKeyDown(i);
         sendKeyUp(i);
