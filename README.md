@@ -3,6 +3,7 @@
 # Avertissement
 Avant de commencer, notez quelques points:
 > Toutes les informations fournies ici sont fournies «telles quelles» et «telles que disponibles» et vous acceptez d'utiliser ces informations entièrement à vos risques et périls. En aucun cas, je ne serai tenu pour responsable de quelque manière que ce soit des dommages, pertes, dépenses, coûts ou responsabilités de quelque nature que ce soit résultant de votre utilisation des informations et documents présentés ici.
+
 > Je ne suis pas un ingénieur, mais j’ai quelques connaissances qui me permettent pour comprendre le fonctionnement. Toutefois, si vous connaissez une meilleure alternative, merci de me le faire savoir. Je serai plus qu'heureux d'apprendre de nouvelles choses!
 Après ces petites mondanités plus que nécessaires pour ne pas être tenues comme responsables de vos agissements, passons aux choses sérieuses.
 
