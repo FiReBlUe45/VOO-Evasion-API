@@ -1,4 +1,4 @@
-# VOO-Evasion-API
+# VOO-Evasion-API (avant la mise à jour VOO TV+)
 
 # Avertissement
 Avant de commencer, notez quelques points:
